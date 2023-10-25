@@ -1,4 +1,4 @@
-body{
+body {
   background-color: rgb(246, 235, 235);
 }
 
@@ -7,8 +7,8 @@ body{
 }
 
 .container-fluid {
-  margin-left: 100px; 
-  margin-right: 100px; 
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .logo {
@@ -18,28 +18,28 @@ body{
   border-radius: 10px;
 }
 
-.form-control {
-  width: 500px; 
+.botonb {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 0 5px 5px 0;
 }
 
-.botonb{
-  background-color: rgb(254, 38, 38);
-  color: black;
-  border-radius: 10px;
-  width: 80px;
+.search-icon {
+  font-size: 1.2em;
+  margin-right: 5px;
 }
 
 main {
-  margin-left: 100px; 
+  margin-left: 100px;
   margin-right: 100px;
 }
 
-.titulo-principal{
+.titulo-principal {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-.contenedor-productos{
+.contenedor-productos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
@@ -48,6 +48,18 @@ main {
 .producto {
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.producto:hover .producto-imagen {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.producto:hover .producto-detalles {
+  background: rgba(151, 151, 151, 0.7);
 }
 
 h3 a {
@@ -55,49 +67,53 @@ h3 a {
   color: black;
 }
 
-.producto-imagen{
+.producto-imagen {
   width: 280px;
-  height: 280px; 
+  height: 280px;
   max-width: 100%;
   cursor: pointer;
   border-radius: .3rem;
+  transition: all 0.3s;
 }
 
-.producto-detalles{
+.producto-detalles {
   background-color: white;
   color: black;
   padding: .5rem;
   margin-top: -2rem;
   position: relative;
+  transition: all 0.3s;
 }
 
-.producto-titulo{
+.producto-titulo {
   font-size: 1rem;
   cursor: pointer;
   text-align: center;
+  transition: all 0.3s;
 }
 
-.cont{
+.cont {
   text-align: center;
 }
 
 .card-group2 {
   margin-bottom: 40px;
   display: flex;
+  justify-content: center;
 }
 
-.ratio-1x1{
+.ratio-1x1 {
   margin-right: 2px;
 }
 
-.card-group2 > .ratio-1x1 {
+.card-group2>.ratio-1x1 {
   width: 15%;
   background-color: white;
   transition: background-color 0.3s, color 0.3s;
 }
 
-.card-group2 > .ratio-1x1:hover .producto-enlace2 {
-  background-color: red;
+.card-group2>.ratio-1x1:hover .producto-enlace2 {
+  background-color: rgb(248, 17, 17);
   color: white;
   cursor: pointer;
 }
@@ -123,8 +139,8 @@ h3 a {
 }
 
 .container-fluid2 {
-  margin-left: 100px; 
-  margin-right: 100px; 
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .text-small {
@@ -145,17 +161,10 @@ h3 a {
   padding: 0;
 }
 
-
-.textorelleno {
-  margin: 10px;
-  font-size: 18px;
-  font-family: Arial, sans-serif;
+.relleno {
   text-align: center;
 }
-
 
 .contacto {
   margin: 20px;
 }
-
-

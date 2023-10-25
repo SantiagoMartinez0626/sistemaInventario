@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Papeleria Mariam</title>
+  <title>Papelería Mariam</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
@@ -14,23 +14,20 @@
 <body>
   <nav class="navbar navbar-expand-lg bg-red">
     <div class="container-fluid ">
-      <a href="home.html">
+      <a href="index.html">
         <img class="logo" src="img/logo.png" alt="logotipo">
       </a>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">Servicios</a>
+              aria-expanded="false">Catálogo</a>
             <ul class="dropdown-menu">
               <li>
-                <a class="dropdown-item" href="./stationery.html">Papeleria</a>
+                <a class="dropdown-item" href="./physicalProducts.html">Productos Físicos</a>
               </li>
               <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li>
-                <a class="dropdown-item" href="./onlineservices.html">Tramites en linea</a>
+                <a class="dropdown-item" href="./onlineServices.html">Servicios en Línea</a>
               </li>
             </ul>
           </li>
@@ -40,36 +37,46 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="./contactus.html">Contactanos</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./aid.html">Ayuda</a>
-          </li>
         </ul>
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Buscar productos, marcas y mas..."
-            aria-label="Search">
-          <button class="botonb" type="submit">Buscar</button>
+          <div class="input-group">
+            <input class="form-control me-2" type="search" placeholder="Buscar productos" aria-label="Search">
+            <button class="botonb" type="submit">
+              <span class="search-icon" aria-hidden="true">🔍</span>
+            </button>
+          </div>
         </form>
       </div>
     </div>
   </nav>
   <main>
-    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="img/1.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="img/2.jpeg" class="d-block w-100" alt="...">
+          <img src="img/2.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="img/3.jpeg" class="d-block w-100" alt="...">
+          <img src="img/3.jpg" class="d-block w-100" alt="...">
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
@@ -77,7 +84,7 @@
     <h2 class="titulo-principal">Más buscados</h2>
     <div class="contenedor-productos">
       <div class="producto">
-        <a href="lapicerooffi-esco.html">
+        <a href="office-escoPencil.html">
           <img class="producto-imagen" src="img/lapiceroOffiEsco.jpg" alt="">
           <div class="producto-detalles">
             <h3 class="producto-titulo"><a href="lapicerooffi-esco.html">Lapicero Offi-Esco</a></h3>
@@ -85,15 +92,15 @@
         </a>
       </div>
       <div class="producto">
-        <a href="carpetapresentacionblanca.html">
+        <a href="whitePresentationFolder.html">
           <img class="producto-imagen" src="img/carpetaBlanca.jpg" alt="">
           <div class="producto-detalles">
-            <h3 class="producto-titulo"><a href="carpetapresentacionblanca.html">Carpeta de presentacion blanca</a></h3>
+            <h3 class="producto-titulo"><a href="carpetapresentacionblanca.html">Carpeta de presentación blanca</a></h3>
           </div>
         </a>
       </div>
       <div class="producto">
-        <a href="cintadeembalaje.html">
+        <a href="packingTape.html">
           <img class="producto-imagen" src="img/cinta.jpg" alt="">
           <div class="producto-detalles">
             <h3 class="producto-titulo"><a href="cintadeembalaje.html">Cinta de embalaje</a></h3>
@@ -101,7 +108,7 @@
         </a>
       </div>
       <div class="producto">
-        <a href="sobremanila.html">
+        <a href="aboutManila.html">
           <img class="producto-imagen" src="img/sobreManila.jpg" alt="">
           <div class="producto-detalles">
             <h3 class="producto-titulo"><a href="sobremanila.html">Sobre manila</a></h3>
@@ -112,15 +119,15 @@
     <h2 class="titulo-principal">Todos los productos</h2>
     <div class="contenedor-productos">
       <div class="producto">
-        <a href="lapiz.html">
+        <a href="pencil.html">
           <img class="producto-imagen" src="img/lapiz.jpg" alt="">
           <div class="producto-detalles">
-            <h3 class="producto-titulo"><a href="lapiz.html">Lapiz</a></h3>
+            <h3 class="producto-titulo"><a href="lapiz.html">Lápiz</a></h3>
           </div>
         </a>
       </div>
       <div class="producto">
-        <a href="marcadorBorrable.html">
+        <a href="erasableMarker.html">
           <img class="producto-imagen" src="img/marcadorBorrable.jpg" alt="">
           <div class="producto-detalles">
             <h3 class="producto-titulo"><a href="marcadorBorrable.html">Marcador borrable</a></h3>
@@ -136,7 +143,7 @@
         </a>
       </div>
       <div class="producto">
-        <a href="carpetaMarron.html">
+        <a href="brownFolder.html">
           <img class="producto-imagen" src="img/carpetaMarron.jpg" alt="">
           <div class="producto-detalles">
             <h3 class="producto-titulo"><a href="carpetaMarron.html">Carpeta marrón</a></h3>
@@ -144,7 +151,7 @@
         </a>
       </div>
       <div class="producto">
-        <a href="lapicerooffi-esco.html">
+        <a href="office-escoPencil.html">
           <img class="producto-imagen" src="img/lapiceroOffiEsco.jpg" alt="">
           <div class="producto-detalles">
             <h3 class="producto-titulo"><a href="lapicerooffi-esco.html">Lapicero Offi-Esco</a></h3>
@@ -152,15 +159,15 @@
         </a>
       </div>
       <div class="producto">
-        <a href="carpetapresentacionblanca.html">
+        <a href="whitePresentationFolder.html">
           <img class="producto-imagen" src="img/carpetaBlanca.jpg" alt="">
           <div class="producto-detalles">
-            <h3 class="producto-titulo"><a href="carpetapresentacionblanca.html">Carpeta de presentacion blanca</a></h3>
+            <h3 class="producto-titulo"><a href="carpetapresentacionblanca.html">Carpeta de presentación blanca</a></h3>
           </div>
         </a>
       </div>
       <div class="producto">
-        <a href="cintadeembalaje.html">
+        <a href="packingTape.html">
           <img class="producto-imagen" src="img/cinta.jpg" alt="">
           <div class="producto-detalles">
             <h3 class="producto-titulo"><a href="cintadeembalaje.html">Cinta de embalaje</a></h3>
@@ -168,7 +175,7 @@
         </a>
       </div>
       <div class="producto">
-        <a href="sobremanila.html">
+        <a href="aboutManila.html">
           <img class="producto-imagen" src="img/sobreManila.jpg" alt="">
           <div class="producto-detalles">
             <h3 class="producto-titulo"><a href="sobremanila.html">Sobre manila</a></h3>
@@ -184,8 +191,8 @@
           <div class="card-body">
             <h5 class="producto-titulo">BIC</h5>
             <p class="card-text cont">Es una icónica empresa francesa que se ha destacado en la fabricación de productos
-              de papelería y escritura de alta calidad asequibles. Su bolígrafo, es un producto emblemático que ha
-              ganado reconocimiento mundial gracias a su confiabilidad y disponibilidad generalizada.</p>
+              de papelería y escritura de alta calidad asequibles. Su bolígrafo es un producto emblemático que a ganado
+              reconocimiento mundial gracias a su confiabilidad y disponibilidad generalizada.</p>
           </div>
         </div>
       </div>
@@ -196,8 +203,8 @@
             <h5 class="producto-titulo">MONGOL</h5>
             <p class="card-text cont">Es una marca de lápices de grafito que originalmente fue creada por la empresa
               estadounidense Eberhard Faber y más tarde adquirida por Newell Brands. Conocido por su calidad y
-              durabilidad, el lápiz Mongol (su producto mas conocido) ofrece una variedad de graduaciones de dureza,
-              para satisfacer las necesidades de escritura y dibujo, haciendolo uno de los mejores lapices en la
+              durabilidad, el lápiz Mongol (su producto más conocido) ofrece una variedad de graduaciones de dureza,
+              para satisfacer las necesidades de escritura y dibujo, haciéndolo uno de los mejores lápices en la
               actualidad.</p>
           </div>
         </div>
@@ -214,16 +221,26 @@
         </div>
       </div>
     </div>
-    <h2 class="titulo-principal">Servicios</h2>
+    <h2 class="titulo-principal">Categorías</h2>
     <div class="card-group2">
       <div class="ratio ratio-1x1">
-        <a href="stationery.html" class="producto-enlace2">
-          <h5 class="producto-titulo2">Papelería</h5>
+        <a href="writingServices.html" class="producto-enlace2">
+          <h5 class="producto-titulo2">Servicios de Escritura</h5>
         </a>
       </div>
       <div class="ratio ratio-1x1">
-        <a href="onlineservices.html" class="producto-enlace2">
-          <h5 class="producto-titulo2">Tramites en linea</h5>
+        <a href="officeSupplies.html" class="producto-enlace2">
+          <h5 class="producto-titulo2">Suministros de Oficina</h5>
+        </a>
+      </div>
+      <div class="ratio ratio-1x1">
+        <a href="schoolchildren.html" class="producto-enlace2">
+          <h5 class="producto-titulo2">Escolares</h5>
+        </a>
+      </div>
+      <div class="ratio ratio-1x1">
+        <a href="onlineProcedures.html" class="producto-enlace2">
+          <h5 class="producto-titulo2">Trámites en Línea</h5>
         </a>
       </div>
     </div>
@@ -236,7 +253,7 @@
         puedan tener. Toda la información que necesitan sobre nuestra amplia gama de productos y servicios está
         disponible aquí, a su disposición.</p>
       <p class="text-small">Esta no es una tienda virtual ni funciona como tal. ¡Gracias por tu comprensión!</p>
-      <p class="text-s">Copyright © 2015-2023 Papeleria Mariam, Colombia</p>
+      <p class="text-s">Copyright © 2015-2023 Papelería Mariam, Colombia</p>
       <p class="text-s">Av.0 #9-10 barrio latino, Cúcuta, Colombia</p>
     </div>
   </footer>

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Papeleria Mariam</title>
+  <title>Papelería Mariam</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
@@ -14,23 +14,20 @@
 <body>
   <nav class="navbar navbar-expand-lg bg-red">
     <div class="container-fluid ">
-      <a href="home.html">
+      <a href="index.html">
         <img class="logo" src="img/logo.png" alt="logotipo">
       </a>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">Servicios</a>
+              aria-expanded="false">Catálogo</a>
             <ul class="dropdown-menu">
               <li>
-                <a class="dropdown-item" href="./stationery.html">Papeleria</a>
+                <a class="dropdown-item" href="./physicalProducts.html">Productos Físicos</a>
               </li>
               <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li>
-                <a class="dropdown-item" href="./onlineservices.html">Tramites en linea</a>
+                <a class="dropdown-item" href="./onlineServices.html">Servicios en Línea</a>
               </li>
             </ul>
           </li>
@@ -40,53 +37,74 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="./contactus.html">Contactanos</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./aid.html">Ayuda</a>
-          </li>
         </ul>
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Buscar productos, marcas y mas..."
-            aria-label="Search">
-          <button class="botonb" type="submit">Buscar</button>
+          <div class="input-group">
+            <input class="form-control me-2" type="search" placeholder="Buscar productos" aria-label="Search">
+            <button class="botonb" type="submit">
+              <span class="search-icon" aria-hidden="true">🔍</span>
+            </button>
+          </div>
         </form>
       </div>
     </div>
   </nav>
   <main>
     <h2 class="titulo-principal">Nosotros</h2>
-    <p class="textorelleno">Papelería Mariam es una empresa que ha establecido un estándar ejemplar en la industria
-      desde su fundación en 2015. Nuestro compromiso inquebrantable con la excelencia y la satisfacción del cliente ha
-      sido el pilar de nuestro éxito continuo.</p>
-    <p class="textorelleno">En un mercado saturado de opciones, nuestra misión ha sido destacarnos mediante la oferta
-      de servicios y productos de la más alta calidad. Creemos que nuestros clientes merecen lo mejor, y es por eso que
-      nos esforzamos constantemente por mantener una selección de productos que cumpla con sus expectativas y
-      necesidades más exigentes.</p>
-    <p class="textorelleno">Uno de los aspectos más destacados de Papelería Mariam es nuestro equipo altamente
-      capacitado. Sabemos que una atención al cliente excepcional no es solo un servicio, sino una experiencia que marca
-      la diferencia. Nuestro personal está dedicado a brindar asesoramiento experto y amable a cada cliente que entra
-      por nuestras puertas. La pasión que tenemos por ayudar a nuestros clientes a encontrar soluciones a sus problemas
-      e inquietudes es evidente en cada interacción.</p>
-    <p class="textorelleno">En nuestro compromiso de ofrecer una experiencia de compra incomparable, hemos creado un
-      ambiente en el que los clientes se sienten cómodos y bienvenidos. Sabemos que la comodidad y la relajación son
-      esenciales para una experiencia de compra agradable, por lo que hemos diseñado nuestro espacio de manera cuidadosa
-      para que refleje nuestra dedicación a la satisfacción del cliente.</p>
-    <p class="textorelleno">Nuestra gama de productos abarca desde material de oficina esencial hasta artículos de
-      papelería de diseño. Nos enorgullecemos de mantener una amplia variedad de opciones para que nuestros clientes
-      puedan encontrar exactamente lo que están buscando. Ya sea que necesite suministros para la oficina, material
-      escolar de calidad o productos de arte y manualidades, en Papelería Mariam seguramente encontrará lo que necesita.
-    </p>
-    <p class="textorelleno">Además de nuestra dedicación a la calidad y el servicio al cliente, también nos
-      esforzamos
-      por ofrecer precios competitivos. Creemos que la calidad no debe ser sinónimo de altos costos, por lo que
-      trabajamos diligentemente para mantener precios asequibles y accesibles para todos nuestros clientes.</p>
-    <p class="textorelleno">Papelería Mariam no es solo una empresa, es una extensión de nuestro compromiso con la
-      excelencia y la satisfacción del cliente. Esperamos seguir siendo su destino preferido para todas sus necesidades
-      de papelería y suministros, y estamos emocionados de continuar brindándole un servicio de calidad, productos
-      excepcionales y una experiencia de compra inolvidable. Gracias por confiar en nosotros.</p>
-    <h2 class="titulo-principal">Mas buscados</h2>
+    <div class="card mb-3">
+      <img src="img/1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text relleno">Papelería Mariam es una empresa que ha establecido un estándar ejemplar en la
+          industria
+          desde su fundación en 2015. Nuestro compromiso inquebrantable con la excelencia y la satisfacción del cliente
+          ha
+          sido el pilar de nuestro éxito continuo.</p>
+        <p class="card-text relleno">En un mercado saturado de opciones, nuestra misión ha sido destacarnos mediante la
+          oferta
+          de servicios y productos de la más alta calidad. Creemos que nuestros clientes merecen lo mejor, y es por eso
+          que
+          nos esforzamos constantemente por mantener una selección de productos que cumpla con sus expectativas y
+          necesidades más exigentes.</p>
+        <p class="card-text relleno">Uno de los aspectos más destacados de Papelería Mariam es nuestro equipo altamente
+          capacitado. Sabemos que una atención al cliente excepcional no es solo un servicio, sino una experiencia que
+          marca
+          la diferencia. Nuestro personal está dedicado a brindar asesoramiento experto y amable a cada cliente que
+          entra
+          por nuestras puertas. La pasión que tenemos por ayudar a nuestros clientes a encontrar soluciones a sus
+          problemas
+          e inquietudes es evidente en cada interacción.</p>
+        <p class="card-text relleno">En nuestro compromiso de ofrecer una experiencia de compra incomparable, hemos
+          creado un
+          ambiente en el que los clientes se sienten cómodos y bienvenidos. Sabemos que la comodidad y la relajación son
+          esenciales para una experiencia de compra agradable, por lo que hemos diseñado nuestro espacio de manera
+          cuidadosa
+          para que refleje nuestra dedicación a la satisfacción del cliente.</p>
+      </div>
+      <img src="img/foto1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text relleno">Nuestra gama de productos abarca desde material de oficina esencial hasta artículos
+          de
+          papelería de diseño. Nos enorgullecemos de mantener una amplia variedad de opciones para que nuestros clientes
+          puedan encontrar exactamente lo que están buscando. Ya sea que necesite suministros para la oficina, material
+          escolar de calidad o productos de arte y manualidades, en Papelería Mariam seguramente encontrará lo que
+          necesita.</p>
+        <p class="card-text relleno">Además de nuestra dedicación a la calidad y el servicio al cliente, también nos
+          esforzamos
+          por ofrecer precios competitivos. Creemos que la calidad no debe ser sinónimo de altos costos, por lo que
+          trabajamos diligentemente para mantener precios asequibles y accesibles para todos nuestros clientes.</p>
+        <p class="card-text relleno">Papelería Mariam no es solo una empresa, es una extensión de nuestro compromiso con
+          la
+          excelencia y la satisfacción del cliente. Esperamos seguir siendo su destino preferido para todas sus
+          necesidades
+          de papelería y suministros, y estamos emocionados de continuar brindándole un servicio de calidad, productos
+          excepcionales y una experiencia de compra inolvidable. Gracias por confiar en nosotros.</p>
+      </div>
+    </div>
+
+    <h2 class="titulo-principal">Más buscados</h2>
     <div class="contenedor-productos">
       <div class="producto">
-        <a href="lapicerooffi-esco.html">
+        <a href="office-escoPencil.html">
           <img class="producto-imagen" src="img/lapiceroOffiEsco.jpg" alt="">
           <div class="producto-detalles">
             <h3 class="producto-titulo"><a href="lapicerooffi-esco.html">Lapicero Offi-Esco</a></h3>
@@ -94,15 +112,15 @@
         </a>
       </div>
       <div class="producto">
-        <a href="carpetapresentacionblanca.html">
+        <a href="whitePresentationFolder.html">
           <img class="producto-imagen" src="img/carpetaBlanca.jpg" alt="">
           <div class="producto-detalles">
-            <h3 class="producto-titulo"><a href="carpetapresentacionblanca.html">Carpeta de presentacion blanca</a></h3>
+            <h3 class="producto-titulo"><a href="carpetapresentacionblanca.html">Carpeta de presentación blanca</a></h3>
           </div>
         </a>
       </div>
       <div class="producto">
-        <a href="cintadeembalaje.html">
+        <a href="packingTape.html">
           <img class="producto-imagen" src="img/cinta.jpg" alt="">
           <div class="producto-detalles">
             <h3 class="producto-titulo"><a href="cintadeembalaje.html">Cinta de embalaje</a></h3>
@@ -110,7 +128,7 @@
         </a>
       </div>
       <div class="producto">
-        <a href="sobremanila.html">
+        <a href="aboutManila.html">
           <img class="producto-imagen" src="img/sobreManila.jpg" alt="">
           <div class="producto-detalles">
             <h3 class="producto-titulo"><a href="sobremanila.html">Sobre manila</a></h3>
@@ -126,8 +144,8 @@
           <div class="card-body">
             <h5 class="producto-titulo">BIC</h5>
             <p class="card-text cont">Es una icónica empresa francesa que se ha destacado en la fabricación de productos
-              de papelería y escritura de alta calidad asequibles. Su bolígrafo, es un producto emblemático que ha
-              ganado reconocimiento mundial gracias a su confiabilidad y disponibilidad generalizada.</p>
+              de papelería y escritura de alta calidad asequibles. Su bolígrafo es un producto emblemático que a ganado
+              reconocimiento mundial gracias a su confiabilidad y disponibilidad generalizada.</p>
           </div>
         </div>
       </div>
@@ -138,8 +156,8 @@
             <h5 class="producto-titulo">MONGOL</h5>
             <p class="card-text cont">Es una marca de lápices de grafito que originalmente fue creada por la empresa
               estadounidense Eberhard Faber y más tarde adquirida por Newell Brands. Conocido por su calidad y
-              durabilidad, el lápiz Mongol (su producto mas conocido) ofrece una variedad de graduaciones de dureza,
-              para satisfacer las necesidades de escritura y dibujo, haciendolo uno de los mejores lapices en la
+              durabilidad, el lápiz Mongol (su producto más conocido) ofrece una variedad de graduaciones de dureza,
+              para satisfacer las necesidades de escritura y dibujo, haciéndolo uno de los mejores lápices en la
               actualidad.</p>
           </div>
         </div>
@@ -156,16 +174,26 @@
         </div>
       </div>
     </div>
-    <h2 class="titulo-principal">Servicios</h2>
+    <h2 class="titulo-principal">Categorías</h2>
     <div class="card-group2">
       <div class="ratio ratio-1x1">
-        <a href="stationery.html" class="producto-enlace2">
-          <h5 class="producto-titulo2">Papelería</h5>
+        <a href="writingServices.html" class="producto-enlace2">
+          <h5 class="producto-titulo2">Servicios de Escritura</h5>
         </a>
       </div>
       <div class="ratio ratio-1x1">
-        <a href="onlineservices.html" class="producto-enlace2">
-          <h5 class="producto-titulo2">Servicios en línea</h5>
+        <a href="officeSupplies.html" class="producto-enlace2">
+          <h5 class="producto-titulo2">Suministros de Oficina</h5>
+        </a>
+      </div>
+      <div class="ratio ratio-1x1">
+        <a href="schoolchildren.html" class="producto-enlace2">
+          <h5 class="producto-titulo2">Escolares</h5>
+        </a>
+      </div>
+      <div class="ratio ratio-1x1">
+        <a href="onlineProcedures.html" class="producto-enlace2">
+          <h5 class="producto-titulo2">Trámites en Línea</h5>
         </a>
       </div>
     </div>
@@ -178,7 +206,7 @@
         puedan tener. Toda la información que necesitan sobre nuestra amplia gama de productos y servicios está
         disponible aquí, a su disposición.</p>
       <p class="text-small">Esta no es una tienda virtual ni funciona como tal. ¡Gracias por tu comprensión!</p>
-      <p class="text-s">Copyright © 2015-2023 Papeleria Mariam, Colombia</p>
+      <p class="text-s">Copyright © 2015-2023 Papelería Mariam, Colombia</p>
       <p class="text-s">Av.0 #9-10 barrio latino, Cúcuta, Colombia</p>
     </div>
   </footer>
